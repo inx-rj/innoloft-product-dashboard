@@ -1,24 +1,48 @@
 module.exports = {
     root: true,
-    env: {
-        browser: true,
-        es2021: true
-    },
-    extends: [
-        'eslint:recommended',
-        'plugin:react/recommended',
-        'plugin:import/recommended',
-        'standard-with-typescript',
-        'plugin:@typescript-eslint/recommended',
-        // Disables the ESLint rules which will be handled by the "prettier"
-        'eslint-config-prettier' // Always keep it last to overide the other configs
-    ],
-    overrides: [],
+    ignorePatterns: ['tailwind.config.js'],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 'latest',
-        sourceType: 'module'
+        sourceType: 'module',
+        project: './tsconfig.json',
+        requireConfigFile: false,
     },
-    plugins: ['react', '@typescript-eslint', 'prettier'],
-    rules: {}
+    globals: {
+        SharedArrayBuffer: 'readonly'
+    },
+    plugins: ['@typescript-eslint', 'react'],
+    env: {
+        browser: true,
+        node: true,
+        es6: true,
+        jest: true
+    },
+    rules: {
+        'import/named': 'off',
+        'react/react-in-jsx-scope': 'off',
+    },
+    extends: ['eslint:recommended'],
+    settings: {
+        react: {
+            version: 'detect'
+        },
+        'import/resolver': {
+            node: {
+                extensions: ['.js', '.jsx', '.ts', '.tsx']
+            },
+            typescript: {
+                configPath: ['./tsconfig.json']
+            },
+            vite: {
+                configPath: './vite.config.ts'
+            },
+            postcss: {
+                configPath: './postcss.config.js'
+            },
+            tailwindcss: {
+                configPath: './tailwind.config.js'
+            }
+        }
+    }
 };

@@ -1,0 +1,19 @@
+.header {
+  @apply sticky top-0 left-0 right-0 z-10 h-[55px];
+}
+
+.navItems {
+  @apply flex items-center h-full justify-evenly;
+}
+
+.headerLogo {
+  @apply bg-white w-[140px] h-[28px] m-2;
+}
+
+.headerRightMenu {
+  @apply text-white w-[184px] flex items-center justify-evenly;
+}
+
+.profileIcon {
+  @apply rounded-full flex items-center justify-center bg-[#D9D9D9] w-[25px] h-[25px]
+}

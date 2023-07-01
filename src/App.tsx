@@ -1,8 +1,15 @@
+import { Suspense, lazy } from 'react';
+
+const Header = lazy(() => import('components/common/Header'));
+
 const App = () => {
   return (
-    <div>
+    <>
+      <Suspense fallback="loading...">
+        <Header />
+      </Suspense>
       <h1>Innoloft - Dashboard</h1>
-    </div>
+    </>
   );
 }
 
