@@ -3,11 +3,21 @@ import Search from 'assets/img/search.svg';
 import InnoMessenger from 'assets/img/inno_messenger.svg';
 import InnoNotification from 'assets/img/inno_notification.svg';
 import InnoDownArrow from 'assets/img/inno_down_arrow.svg';
+import Profile from 'assets/img/profile.svg';
+import HomeIcon from 'assets/img/home.svg';
+import InnoGroup from 'assets/img/inno_group.svg';
+import InnoOrganization from 'assets/img/inno_organization.svg';
+import BreadcrumbArrow from 'assets/img/breadcrumb_arrow.svg';
 
 export const Images = {
   Loader,
   Search,
   InnoMessenger,
   InnoNotification,
-  InnoDownArrow
+  InnoDownArrow,
+  Profile,
+  HomeIcon,
+  InnoGroup,
+  InnoOrganization,
+  BreadcrumbArrow
 };

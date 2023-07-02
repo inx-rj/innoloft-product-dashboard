@@ -11,13 +11,19 @@ export default {
       },
       colors: {
         page: "#F9FAFB",
+        "grey-desc": "#6B7280",
+        "grey-card-border": "#E5E7EB",
         theme: {
           DEFAULT: "#272e71", //Default theme color
         },
       },
       borderRadius: {
-        DEFAULT: "4px",
+        DEFAULT: "6px",
       },
+    },
+    container: {
+      center: true,
+      padding: '0.625rem',
     },
   },
   plugins: [],
