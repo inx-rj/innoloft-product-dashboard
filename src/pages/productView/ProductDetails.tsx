@@ -73,7 +73,13 @@ const ProductDetails = () => {
       <div className="col-span-3">
         <div className="flex items-center">
           <Breadcrump linkName={productData?.['name'] ?? ''} />
-          <Button customClass="ml-auto" name="Edit" value="Edit" handleOnClick={() => console.log({ productId })} />
+          <Button
+            disabled
+            customClass="ml-auto"
+            name="Edit"
+            value="Edit"
+            handleOnClick={() => console.log({ productId })}
+          />
         </div>
         <div className="card border border-grey-card-border rounded mt-5">
           <div className="grid md:grid-cols-4">
