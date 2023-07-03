@@ -13,6 +13,7 @@ export default {
         page: "#F9FAFB",
         "grey-desc": "#6B7280",
         "grey-card-border": "#E5E7EB",
+        "blue-heading": "#374151",
         theme: {
           DEFAULT: "#272e71", //Default theme color
         },
