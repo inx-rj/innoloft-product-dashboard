@@ -8,7 +8,7 @@ const AppLayout = () => (
     <Suspense fallback="loading...">
       <Header />
     </Suspense>
-    <main role="main" className="min-h-[calc(100vh-100px)]">
+    <main role="main" className="min-h-[calc(100vh-55px)]">
       <Outlet />
     </main>
   </>

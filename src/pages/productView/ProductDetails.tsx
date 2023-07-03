@@ -66,7 +66,7 @@ const ProductDetails = () => {
   return loader ? (
     <LoadingSpinner />
   ) : (
-    <div className="md:container grid md:grid-cols-4 gap-[30px] p-2.5 md:p-0 md:px-0 my-5">
+    <div className="md:container grid md:grid-cols-4 gap-[30px] px-2.5 md:px-0 my-5">
       <div className="hidden md:block">
         <LeftMenuCard productData={productData} />
       </div>
@@ -90,8 +90,9 @@ const ProductDetails = () => {
                   src={productData?.['picture']}
                   alt={productData.name}
                 />
-                <div className="absolute top-0 left-0 bg-gray-800 text-white px-2 py-1">
-                  <span className="text-sm font-medium">{productData?.type?.name}</span>
+                <div className="absolute top-0 left-0 bg-white text-blue-heading">
+                  {/* <img className="bg-theme text-sm font-medium inline" src={Images.InnoMessenger} /> */}
+                  <span className="text-sm font-medium m-0">{productData?.type?.name}</span>
                 </div>
               </div>
               <div className="p-5">
@@ -139,13 +140,13 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
-        <div className="card border border-grey-card-border rounded mt-5 p-5">
-          <h3 className="">Video</h3>
+        <div className="card border border-grey-card-border rounded mt-5 px-2.5 py-[30px] md:p-5">
+          <h3 className="mb-2.5">Video</h3>
           <div className="flex flex-col justify-center md:justify-start w-full h-[210px] md:w-[715px] md:h-[400px] mx-auto">
             <Video videoUrl={productData?.video} />
           </div>
         </div>
-        <div className="card border border-grey-card-border rounded mt-5 p-5">
+        <div className="card border border-grey-card-border rounded mt-5 p-2.5 md:p-5">
           <h3 className="mb-5">Product Details</h3>
           <div className="grid md:grid-cols-2 gap-5">
             {productDetails?.map((detailsItem, index) => (
