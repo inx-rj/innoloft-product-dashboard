@@ -26,8 +26,8 @@ const LeftMenuCard = () => {
           <p className="text-gray-500">Innoloft GmbH</p>
         </div>
       </div>
-      {menuList.map(menuItem => (
-        <div className="mt-4 flex items-center gap-3">
+      {menuList.map((menuItem, index) => (
+        <div className="mt-4 flex items-center gap-3" key={index}>
           <img className="h-4 w-4" src={menuItem.icon} alt="Inno Home" />
           <h3 className="text-lg font-semibold">{menuItem.title}</h3>
           {Object.keys(menuItem).includes('children') && (

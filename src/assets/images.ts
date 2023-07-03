@@ -8,6 +8,7 @@ import HomeIcon from 'assets/img/home.svg';
 import InnoGroup from 'assets/img/inno_group.svg';
 import InnoOrganization from 'assets/img/inno_organization.svg';
 import BreadcrumbArrow from 'assets/img/breadcrumb_arrow.svg';
+import ErrorIcon from 'assets/img/error_icon.svg';
 
 export const Images = {
   Loader,
@@ -19,5 +20,6 @@ export const Images = {
   HomeIcon,
   InnoGroup,
   InnoOrganization,
-  BreadcrumbArrow
+  BreadcrumbArrow,
+  ErrorIcon
 };

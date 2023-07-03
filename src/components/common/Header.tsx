@@ -4,19 +4,18 @@ import { CONFIG_DATA } from 'redux/reducers/config/app/app.slice';
 import { useAppDispatch, useAppSelector } from 'redux/store';
 import LoadingSpinner from './loader/loader';
 import { Images } from 'assets/images';
+import { env } from 'helper/env';
 
 const Header = () => {
   const dispatch = useAppDispatch();
   const { loader, configsData } = useAppSelector(CONFIG_DATA);
-
-  const configurationId = 1;
 
   const fetchConfigs = (configId: number) => {
     dispatch(GET_CONFIGURATIONS(configId));
   };
 
   useEffect(() => {
-    fetchConfigs(configurationId);
+    fetchConfigs(env.APP_ID);
   }, []);
 
   return loader ? (

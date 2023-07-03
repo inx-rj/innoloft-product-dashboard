@@ -1,5 +1,6 @@
 export const env = {
   APP_NAME: 'INNOLOFT',
+  APP_ID: parseInt(import.meta.env['VITE_APP_ID'] ?? '1'),
   API_URL: import.meta.env['VITE_BACKEND_API_URL']
 };
 
